@@ -12,7 +12,7 @@ public class Main {
         }
 
         System.out.println("task3");
-        for (int i = 0; i < 17; i += 2) {
+        for (int i = 0; i <= 17; i += 2) {
             System.out.println(i);
         }
 
@@ -48,15 +48,15 @@ public class Main {
 
         System.out.println("task9");
         deposit = 29000;
-        total = 0;
+        float totalDeposit = 0;
         for (int i = 1; i <= 12; i++) {
-            total += total / 100 + deposit;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей ");
+            totalDeposit = (float) (totalDeposit * 1.01 + deposit);
+            System.out.println("Месяц " + i + " сумма накоплений равна " + Math.round(totalDeposit) + " рублей ");
         }
 
         System.out.println("task10");
         for (int i = 1; i <= 10; i++) {
-            System.out.println("2 * " + i + " * " + i * 2);
+            System.out.println("2 * " + i + " = " + i * 2);
         }
     }
 }
